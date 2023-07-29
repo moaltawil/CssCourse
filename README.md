@@ -33,3 +33,33 @@ p {
   color: red;
 }
 ```
+
+# Html 2
+```
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS</title>
+    <link rel="stylesheet" href="css/master.css" />
+    <link rel="stylesheet" href="css/library.css" />
+    <link rel="stylesheet" href="css/rtl.css" />
+  </head>
+  <body>
+    <div>Div</div>
+    <div class="_test">Div</div>
+    <div id="test">Div</div>
+  </body>
+</html>
+```
+
+# Css 2
+
+```
+._test {
+  color: red;
+}
+.user-test {
+  color: red;
+}
+```
