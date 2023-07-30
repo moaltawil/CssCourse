@@ -155,9 +155,50 @@ div {
 
 # Html 8
 ```
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS</title>
+    <link rel="stylesheet" href="css/master.css" />
+  </head>
+  <body>
+    <div>Div => Block</div>
+    <div>Div => Block</div>
+    <div>Div => Block</div>
 
+    <span>Span => Inline</span>
+    <span>Span => Inline</span>
+    <span>Span => Inline</span>
+  </body>
+</html>
 ```
 # Css 8
 ```
+/*
 
+  Block
+
+  - Take Full Width If No Width
+  - Add Line Break
+  - Respect Padding, Margin, Width, Height
+
+  Inline
+
+  - Do Not Repsepct Width, Height
+  - Respect Padding And Margin [ Just Wight + Left ]
+  - Do Not Add Line Break
+  - Allow Elements Before And After It in The Same Line
+
+  Inline-Block
+
+  - Allow Elements Before And After It in The Same Line
+  - Respect Padding, Margin, Width, Height
+
+*/
+
+span {
+  background-color: #EEE;
+  display: inline-block;
+}
 ```
