@@ -96,25 +96,6 @@ div {
 }
 ```
 
-
-# Html 4
-```
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>CSS</title>
-    <link rel="stylesheet" href="css/master.css" />
-  </head>
-  <body>
-    <div>
-      <h2>Product Title</h2>
-      <p>This Is Paragraph</p>
-    </div>
-  </body>
-</html>
-```
-
 # Css 4
 
 ```
@@ -137,24 +118,6 @@ div {
   padding-top: 10px;
 }
 ```
-
-# html 5
-```
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>CSS</title>
-    <link rel="stylesheet" href="css/master.css" />
-  </head>
-  <body>
-    <div>
-      <h2>Product Title</h2>
-      <p>This Is Paragraph</p>
-    </div>
-  </body>
-</html>
-```
 # Css 5
 ```
 div {
@@ -165,23 +128,6 @@ div {
 }
 ```
 
-# html 6
-```
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>CSS</title>
-    <link rel="stylesheet" href="css/master.css" />
-  </head>
-  <body>
-    <div>
-      <h2>Product Title</h2>
-      <p>This Is Paragraph</p>
-    </div>
-  </body>
-</html>
-```
 #Css 6
 ```
 div {
@@ -196,12 +142,22 @@ div {
 }
 ```
 
-# html 7
-```
-
-```
-
 # Css 7
+```
+div {
+  background-color: #DDD;
+  width: 300px;
+  padding: 10px;
+  outline: 10px solid red;
+  border: 10px solid blue;
+}
+```
+
+# Html 8
+```
+
+```
+# Css 8
 ```
 
 ```
