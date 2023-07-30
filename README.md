@@ -182,7 +182,7 @@ div {
   </body>
 </html>
 ```
-Css 6
+#Css 6
 ```
 div {
   background-color: #DDD;
