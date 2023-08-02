@@ -205,10 +205,28 @@ span {
 
 # Html 9
 ```
-
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS</title>
+    <link rel="stylesheet" href="css/master.css" />
+  </head>
+  <body>
+    <div class="first">First</div>
+    <div>Div</div>
+  </body>
+</html>
 ```
 
 # Css 9 
 ```
-
+div {
+  background-color: red;
+  margin: 10px 0;
+}
+.first {
+  visibility: hidden; //بتسيب مكان الها وبتحجزه
+//display: none; //حيختفي من مكان التصميم كله
+}
 ```
