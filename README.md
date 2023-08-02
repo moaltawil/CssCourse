@@ -427,4 +427,153 @@ div p {
 }
 ```
 ا
+# Html 15
+```
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS</title>
+    <link rel="stylesheet" href="css/master.css" />
+  </head>
+  <body>
+    <div class="with-ser">Welcome To Elzero Web School, Hello F</div>
+    <div class="san-ser">Welcome To Elzero Web School, Hello F</div>
+  </body>
+</html>
+```
 
+# Css 15
+```
+.with-ser {
+  font-family: 'Times New Roman', Times, serif;
+}
+.san-ser {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.with-ser,
+.san-ser {
+  background-color: #EEE;
+  padding: 10px;
+}
+```
+
+# Html 16
+```
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS</title>
+    <link rel="stylesheet" href="css/master.css" />
+  </head>
+  <body>
+    <div>
+      Elzero Web School
+      <span>Test</span>
+    </div>
+  </body>
+</html>
+```
+
+# Css 16
+```
+body {
+  font-size: 40px;
+}
+div {
+  font-size: 5vw;
+}
+div span {
+  font-size: 2rem;
+}
+```
+
+# Html 17
+```
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS</title>
+    <link rel="stylesheet" href="css/master.css" />
+  </head>
+  <body>
+    <div class="parent">
+      <div>Product One</div>
+      <div>Product Two</div>
+      <div>Product Three</div>
+      <div>Product Four</div>
+    </div>
+    <div class="clear"></div>
+    <p>This Is P For Testing Float</p>
+  </body>
+</html>
+```
+# Css 16
+```
+.parent {
+  background-color: red;
+  padding: 10px;
+}
+.parent div {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  background-color: #eee;
+  width: 25%;
+  float: left;
+}
+.clear {
+  clear: both;
+}
+```
+
+# Html 17
+```
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS</title>
+    <link rel="stylesheet" href="css/master.css" />
+  </head>
+  <body>
+    <div>Product One</div>
+    <div>Product Two</div>
+    <div>Product Three</div>
+    <div>Product Four</div>
+  </body>
+</html>
+```
+
+# Css 17
+```
+body {
+  margin: 0;
+}
+div {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  background-color: #eee;
+  float: left;
+  width: calc((100% - 60px) / 5);
+  margin-left: 10px;
+}
+/*
+  Content Width Is: 100%
+  6 Spaces  10px * 6 => 60px From Content Width
+  100% - 60px Available Space
+  5 Elements The Width Is: (100% - 60px) / 5
+*/
+```
+# Html 18
+```
+
+```
+
+# Css 18
+```
+
+```
