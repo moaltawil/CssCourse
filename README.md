@@ -331,17 +331,100 @@ div {
   padding: 10px;
   display: inline-block;
   max-width: 400px;
-//width: fit-content //على حجم النص
+//width: fit-content; //على حجم النص
 }
 ```
-Html 13
+# Html 13
 ```
-
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS</title>
+    <link rel="stylesheet" href="css/master.css" />
+  </head>
+  <body>
+    <div>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Inventore sit molestiae, corrupti at quae debitis dicta
+      adipisci unde, nemo, veritatis error. Cupiditate,
+      deserunt maiores assumenda ut quod voluptate adipisci repellat.
+    </div>
+  </body>
+</html>
 ```
 
 # Css 13
 ```
+div {
+  width: 150px;
+  height: 150px;
+  background-color: #EEE;
+  margin: 20px auto;
+  border-radius: 6px;
+  overflow: scroll;
+}
+```
 
+# Html 14
+```
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS</title>
+    <link rel="stylesheet" href="css/master.css" />
+  </head>
+  <body>
+    <div>Elzero Web <img decoding="async" src="https://via.placeholder.com/60" alt=""> School</div>
+  </body>
+</html>
+```
+
+# Css 13
+```
+div {
+  background-color: #f9f9f9;
+  text-align: center;
+  direction: ltr;
+}
+img {
+  vertical-align: middle;
+}
+```
+
+# Html 14
+```
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS</title>
+    <link rel="stylesheet" href="css/master.css" />
+  </head>
+  <body>
+    <div>
+      <h3>Elzero Web School</h3>
+      <p>Welcome To The Website</p>
+    </div>
+  </body>
+</html>
+```
+
+# Css 14
+```
+div {
+  text-align: center;
+  padding: 20px;
+  background-color: #EEE;
+  font-size: 20px;
+  border: 2px solid blue;
+}
+div p {
+  border: 2px solid;
+  border-color: inherit;
+  padding: inherit;
+}
 ```
 ا
 
