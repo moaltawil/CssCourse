@@ -128,7 +128,7 @@ div {
 }
 ```
 
-#Css 6
+# Css 6
 ```
 div {
   background-color: #DDD;
@@ -381,7 +381,7 @@ div {
 </html>
 ```
 
-# Css 13
+# Css 14
 ```
 div {
   background-color: #f9f9f9;
@@ -393,7 +393,7 @@ img {
 }
 ```
 
-# Html 14
+# Html 15
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -411,7 +411,7 @@ img {
 </html>
 ```
 
-# Css 14
+# Css 15
 ```
 div {
   text-align: center;
@@ -427,7 +427,7 @@ div p {
 }
 ```
 ا
-# Html 15
+# Html 16
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -443,7 +443,7 @@ div p {
 </html>
 ```
 
-# Css 15
+# Css 16
 ```
 .with-ser {
   font-family: 'Times New Roman', Times, serif;
@@ -458,7 +458,7 @@ div p {
 }
 ```
 
-# Html 16
+# Html 17
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -476,7 +476,7 @@ div p {
 </html>
 ```
 
-# Css 16
+# Css 17
 ```
 body {
   font-size: 40px;
@@ -489,7 +489,7 @@ div span {
 }
 ```
 
-# Html 17
+# Html 18
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -510,7 +510,7 @@ div span {
   </body>
 </html>
 ```
-# Css 17
+# Css 18
 ```
 .parent {
   background-color: red;
@@ -529,7 +529,7 @@ div span {
 }
 ```
 
-# Html 18
+# Html 19
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -547,7 +547,7 @@ div span {
 </html>
 ```
 
-# Css 18
+# Css 19
 ```
 body {
   margin: 0;
@@ -568,16 +568,6 @@ div {
   5 Elements The Width Is: (100% - 60px) / 5
 */
 ```
-# Html 19
-```
-
-```
-
-# Css 19
-```
-
-```
-
 # Html 20
 ```
 
@@ -644,6 +634,16 @@ div {
 ```
 
 # Css 26
+```
+
+```
+
+# Html 27
+```
+
+```
+
+# Css 27
 ```
 
 ```
