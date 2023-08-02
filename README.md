@@ -510,7 +510,7 @@ div span {
   </body>
 </html>
 ```
-# Css 16
+# Css 17
 ```
 .parent {
   background-color: red;
@@ -529,7 +529,7 @@ div span {
 }
 ```
 
-# Html 17
+# Html 18
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -547,7 +547,7 @@ div span {
 </html>
 ```
 
-# Css 17
+# Css 18
 ```
 body {
   margin: 0;
@@ -568,16 +568,6 @@ div {
   5 Elements The Width Is: (100% - 60px) / 5
 */
 ```
-# Html 18
-```
-
-```
-
-# Css 18
-```
-
-```
-
 # Html 19
 ```
 
@@ -644,6 +634,16 @@ div {
 ```
 
 # Css 25
+```
+
+```
+
+# Html 26
+```
+
+```
+
+# Css 26
 ```
 
 ```
