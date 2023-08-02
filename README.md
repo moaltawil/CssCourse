@@ -230,3 +230,118 @@ div {
 //display: none; //حيختفي من مكان التصميم كله
 }
 ```
+
+# Html 10
+```
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS</title>
+    <link rel="stylesheet" href="css/master.css" />
+  </head>
+  <body>
+    <div class="one">One</div>
+    <div class="two">Two</div>
+    <div class="three">Three</div>
+    <div class="four">Four</div>
+    <p class="my-p">This Is P</p>
+  </body>
+</html>
+```
+
+# Css 10
+```
+.one {
+  border-bottom: 2px solid red;
+  color: red;
+}
+.two {
+  border-bottom: 2px solid green;
+  color: green;
+}
+.three {
+  border-bottom: 2px solid blue;
+  color: blue;
+}
+.four {
+  border-bottom: 2px solid black;
+  color: black;
+}
+.one,
+.two,
+.three,
+.four,
+.my-p {
+  padding: 15px;
+  margin: 12px 0;
+  background-color: #ededed;
+}
+```
+
+# Html 11
+```
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS</title>
+    <link rel="stylesheet" href="css/master.css" />
+  </head>
+  <body>
+    <div>
+      <h2>Title</h2>
+      <p>Paragraph Inside Div</p>
+      <p class="special">Paragraph Inside Div With Class</p>
+    </div>
+    <p class="special">Paragraph Outside Div</p>
+  </body>
+</html>
+```
+
+# Css 11
+```
+div .special {
+  color: red;
+}
+```
+# Html 12
+```
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS</title>
+    <link rel="stylesheet" href="css/master.css" />
+  </head>
+  <body>
+    <div> Mohamed</div>
+    <hr>
+    <div> Mohamed Ahmed</div>
+    <hr>
+    <div> Mohamed Ahmed Sayed</div>
+  </body>
+</html>
+```
+
+# Css 12 
+```
+div {
+  background-color: red;
+  padding: 10px;
+  display: inline-block;
+  max-width: 400px;
+//width: fit-content //على حجم النص
+}
+```
+Html 13
+```
+
+```
+
+# Css 13
+```
+
+```
+ا
+
