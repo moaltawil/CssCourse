@@ -949,20 +949,725 @@ div {
 
 # Html 26
 ```
-
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS</title>
+    <link rel="stylesheet" href="css/master.css" />
+  </head>
+  <body>
+    <div class="parent">
+      <div class="one">One</div>
+      <div class="one">One</div>
+    </div>
+  </body>
+</html>
 ```
 
 # Css 26
 ```
-
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.parent {
+  width: 600px;
+  overflow: hidden;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ddd;
+}
+.one {
+  background-color: #eee;
+  width: 300px;
+  float: left;
+  padding: 10px;
+  border: 1px solid red;
+}
 ```
 
 # Html 27
 ```
-
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS</title>
+    <link rel="stylesheet" href="css/master.css" />
+  </head>
+  <body>
+    <div class="one">One</div>
+  </body>
+</html>
 ```
 
 # Css 27
+```
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.one {
+  background-color: #EEE;
+  width: 200px;
+  height: 100px;
+  transition-duration: 1s;
+  transition-delay: 0.2s;
+  transition-property: width;
+  transition-timing-function: ease-in-out;
+  transition: all 2s 0.5s linear;
+}
+.one:hover {
+  width: 280px;
+  height: 120px;
+}
+```
+
+# Html 28
+```
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS</title>
+    <link rel="stylesheet" href="css/master.css" />
+  </head>
+  <body>
+    <div class="one" style="background-color: red;">One</div>
+  </body>
+</html>
+```
+
+# Css 28
+```
+.one {
+  background-color: #EEE !important;
+}
+```
+
+# Html 29
+```
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS</title>
+    <link rel="stylesheet" href="css/master.css" />
+  </head>
+  <body>
+    <div class="parent">
+      <div class="one"></div>
+      <div class="two">
+        <div class="up"></div>
+        <div class="down"></div>
+      </div>
+    </div>
+  </body>
+</html>
+```
+
+# Css 29
+```
+/*
+  The Margin Collapse
+  [1] Only Vertical Margin Collapse
+  [2] Bigger Margin Wins
+  [3] Margin Collapsing With Elements Without Anything Between
+  [4] Nesting Does Not Prevent Collapse
+*/
+.parent {
+  overflow: hidden;
+  margin: auto;
+  width: 400px;
+  height: 200px;
+  padding: 10px;
+  background-color: #eee;
+}
+.parent .one,
+.parent .two {
+  float: left;
+  width: 50%;
+  height: 100%;
+}
+.one {
+  background-color: #ddd;
+}
+.two {
+  background-color: #aaa;
+}
+.up {
+  background-color: red;
+  color: white;
+  height: 80px;
+  margin-bottom: 40px;
+}
+.down {
+  background-color: green;
+  color: white;
+  height: 80px;
+  margin-top: 40px;
+}
+```
+
+# Html 30
+```
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS</title>
+    <link rel="stylesheet" href="css/master.css" />
+  </head>
+  <body>
+    <div class="main">Main Div</div>
+    <h2>Main Title</h2>
+    <p>My Paragraph</p>
+    <a href="#">My Link</a>
+    <div class="local">Local</div>
+  </body>
+</html>
+```
+
+# Css 30
+```
+/*
+  CSS Variables
+  - Global Variable
+  - Local Variable
+  var(Variable Name, Fall Back Value)
+*/
+
+:root {
+  --mainColor: blue;
+  --mainPadding: 10px;
+}
+.main {
+  background-color: var(--mainColor, black);
+  color: white;
+  padding: calc(20px + var(--mainPadding));
+}
+h2 {
+  color: var(--mainColor);
+  background-color: #eee;
+  padding: var(--mainPadding);
+}
+p {
+  color: var(--mainColor);
+  border: 2px solid var(--mainColor);
+  padding: var(--mainPadding);
+}
+a:hover {
+  color: var(--mainColor);
+}
+.local {
+  --mainColor: black;
+  background-color: var(--mainColor);
+  color: white;
+}
+```
+
+# Html 31
+```
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS</title>
+    <link rel="stylesheet" href="css/master.css" />
+  </head>
+  <body>
+    <h3>Flex</h3>
+    <div class="flex">
+      <div>One</div>
+      <div>Two</div>
+      <div>Three</div>
+      <div>Four</div>
+    </div>
+    <hr />
+    <h3>Float</h3>
+    <div class="float">
+      <div>One</div>
+      <div>Two</div>
+      <div>Three</div>
+      <div>Four</div>
+    </div>
+  </body>
+</html>
+```
+
+# Css 31
+```
+/*
+  Flexible Box
+  For Parent
+  - display: flex => To Start Flexible Box
+  - flex-direction: row => Default Value
+  - flex-wrap: nowrap => Default Value
+  - flex-flow: [Flex-Direction] + [Flex-Wrap]
+*/
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.flex {
+  background-color: #eee;
+  width: 600px;
+  padding: 20px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+}
+.flex div {
+  background-color: #f00;
+  color: white;
+  width: 25%;
+  text-align: center;
+  padding: 20px;
+}
+.float {
+  overflow: hidden;
+  background-color: #eee;
+  width: 600px;
+  padding: 20px;
+  margin: 20px auto;
+}
+.float div {
+  background-color: #f00;
+  color: white;
+  float: right;
+  width: 25%;
+  text-align: center;
+  padding: 20px;
+}
+```
+
+# Html 32
+```
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS</title>
+    <link rel="stylesheet" href="css/master.css" />
+  </head>
+  <body>
+    <h3>Flex</h3>
+    <div class="flex">
+      <div class="one">One</div>
+      <div class="two">Two</div>
+      <div>Three</div>
+    </div>
+    <hr />
+    <h3>Float</h3>
+    <div class="float">
+      <div class="one">One</div>
+      <div class="two">Two</div>
+      <div>Three</div>
+    </div>
+    <div class="center">Center</div>
+  </body>
+</html>
+```
+
+# Css 32
+```
+/*
+  Flexible Box
+  For Parent
+  - display: flex => To Start Flexible Box
+  - flex-direction: row => Default Value
+  - flex-wrap: nowrap => Default Value
+  - flex-flow: [Flex-Direction] + [Flex-Wrap]
+  ---
+  - justify-content: flex-start => Default Value
+  - align-items: stretch => Default Value
+*/
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.flex {
+  background-color: #eee;
+  width: 600px;
+  padding: 20px;
+  margin: 20px auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.flex div {
+  background-color: #f00;
+  color: white;
+  width: calc(100% / 3);
+  text-align: center;
+  padding: 20px;
+}
+.flex .one,
+.float .one {
+  height: 80px;
+}
+.float {
+  overflow: hidden;
+  background-color: #eee;
+  width: 600px;
+  padding: 20px;
+  margin: 20px auto;
+}
+.float div {
+  background-color: #f00;
+  color: white;
+  float: right;
+  width: calc(100% / 3);
+  text-align: center;
+  padding: 20px;
+}
+.center {
+  background-color: blue;
+  color: white;
+  width: 300px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+```
+# Html 33
+```
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS</title>
+    <link rel="stylesheet" href="css/master.css" />
+  </head>
+  <body>
+    <h3>Flex</h3>
+    <div class="flex">
+      <div>One</div>
+      <div>Two</div>
+      <div>Three</div>
+      <div>Four</div>
+      <div>Five</div>
+    </div>
+  </body>
+</html>
+```
+
+# Css 33
+```
+/*
+  Flexible Box
+  For Parent
+  - display: flex => To Start Flexible Box
+  - flex-direction: row => Default Value
+  - flex-wrap: nowrap => Default Value
+  - flex-flow: [Flex-Direction] + [Flex-Wrap]
+  ---
+  - justify-content: flex-start => Default Value
+  - align-items: stretch => Default Value
+  - align-content: stretch => Default Value
+*/
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.flex {
+  background-color: #eee;
+  width: 600px;
+  height: 400px;
+  padding: 20px;
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: space-between;
+}
+.flex div {
+  background-color: #f00;
+  color: white;
+  width: calc(100% / 3);
+  text-align: center;
+  padding: 20px;
+}
+```
+
+# Html 34
+```
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS</title>
+    <link rel="stylesheet" href="css/master.css" />
+  </head>
+  <body>
+    <h3>Flex</h3>
+    <div class="flex">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+    </div>
+  </body>
+</html>
+```
+
+# Css 34
+```
+/*
+  Flexible Box
+  For Parent
+  - display: flex => To Start Flexible Box
+  - flex-direction: row => Default Value
+  - flex-wrap: nowrap => Default Value
+  - flex-flow: [Flex-Direction] + [Flex-Wrap]
+  - justify-content: flex-start => Default Value
+  - align-items: stretch => Default Value
+  - align-content: stretch => Default Value
+  For Child
+  - flex-grow: 0 => Default Value
+  - flex-shrink: 1 => Default Value
+  - order: 0 => Default Value
+*/
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.flex {
+  background-color: #eee;
+  width: 800px;
+  padding: 20px;
+  margin: 20px auto;
+  display: flex;
+}
+.flex div {
+  background-color: #f00;
+  color: white;
+  width: 80px;
+  text-align: center;
+  padding: 20px;
+  margin-right: 5px;
+  flex-grow: 1;
+}
+```
+
+# Html 35
+```
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS</title>
+    <link rel="stylesheet" href="css/master.css" />
+  </head>
+  <body>
+    <div class="flex">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+    </div>
+    <div class="in">In</div>
+  </body>
+</html>
+```
+
+# Css 35
+```
+/*
+  Flexible Box
+  For Parent
+  - display: flex => To Start Flexible Box
+  - flex-direction: row => Default Value
+  - flex-wrap: nowrap => Default Value
+  - flex-flow: [Flex-Direction] + [Flex-Wrap]
+  - justify-content: flex-start => Default Value
+  - align-items: stretch => Default Value
+  - align-content: stretch => Default Value
+  For Child
+  - flex-grow: 0 => Default Value
+  - flex-shrink: 1 => Default Value
+  - order: 0 => Default Value
+  - flex-basis: auto => Default Value
+  - flex: [Flex Grow] [Flex Shrink] [Flex Basis] 0 1 Auto
+*/
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.flex {
+  background-color: #eee;
+  width: 800px;
+  padding: 20px;
+  margin: 20px auto;
+  display: inline-flex;
+}
+.flex div {
+  background-color: #f00;
+  color: white;
+  width: 80px;
+  text-align: center;
+  padding: 20px;
+  margin-right: 5px;
+  flex-grow: 1;
+}
+.in {
+  display: inline-block;
+}
+```
+
+# Html 36
+```
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS</title>
+    <link rel="stylesheet" href="css/master.css" />
+  </head>
+  <body>
+    <div class="flex">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+    </div>
+  </body>
+</html>
+```
+
+# Css 36
+```
+/*
+  Flexible Box
+  For Parent
+  - display: flex => To Start Flexible Box
+  - flex-direction: row => Default Value
+  - flex-wrap: nowrap => Default Value
+  - flex-flow: [Flex-Direction] + [Flex-Wrap]
+  - justify-content: flex-start => Default Value
+  - align-items: stretch => Default Value
+  - align-content: stretch => Default Value
+  For Child
+  - flex-grow: 0 => Default Value
+  - flex-shrink: 1 => Default Value
+  - order: 0 => Default Value
+  - flex-basis: auto => Default Value
+  - flex: [Flex Grow] [Flex Shrink] [Flex Basis] 0 1 Auto
+  - align-self: auto => Default Value
+*/
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.flex {
+  background-color: #eee;
+  width: 800px;
+  height: 300px;
+  padding: 20px;
+  margin: 20px auto;
+  display: flex;
+  align-items: flex-start;
+}
+.flex div {
+  background-color: #f00;
+  color: white;
+  width: 80px;
+  text-align: center;
+  padding: 20px;
+  margin-right: 5px;
+  flex-grow: 1;
+}
+```
+
+
+# Html 37
+```
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS</title>
+    <link rel="stylesheet" href="css/master.css" />
+  </head>
+  <body>
+    <img decoding="async" src="imgs/learn-programming.png" alt="" />
+  </body>
+</html>
+```
+
+# Css 37
+```
+/*
+  Filters
+*/
+
+* {
+  box-sizing: border-box;
+}
+img {
+  transition: 0.3s;
+  filter: grayscale(100%);
+}
+img:hover {
+  filter: grayscale(0);
+}
+```
+
+# Html 38
+```
+
+```
+
+# Css 38
+```
+
+```
+# Html 39
+```
+
+```
+
+# Css 39
+```
+
+```
+# Html 40
+```
+
+```
+
+# Css 40
+```
+
+```
+# Html 41
+```
+
+```
+
+# Css 41
 ```
 
 ```
