@@ -1773,10 +1773,95 @@ a {
 ```
 # Html 41
 ```
-
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS</title>
+    <link rel="stylesheet" href="css/master.css" />
+  </head>
+  <body>
+    <div class="parent">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+    </div>
+  </body>
+</html>
 ```
 
 # Css 41
+```
+/*
+  Grid
+  Parent
+  - display: grid | inline-grid
+  - grid-template-columns: [Number Of Columns In] => [Px, %, Auto, Repeat]
+*/
+
+* {
+  box-sizing: border-box;
+}
+.parent {
+  margin: 20px auto;
+  width: 800px;
+  height: 500px;
+  background-color: #ddd;
+  display: grid;
+  grid-template-columns: repeat(2, auto) repeat(2, 1fr);
+}
+.parent div {
+  background-color: red;
+  color: white;
+  padding: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+```
+
+# Html 42
+```
+
+```
+
+# Css 42
+```
+
+```
+
+# Html 43
+```
+
+```
+
+# Css 43
+```
+
+```
+
+# Html 44
+```
+
+```
+
+# Css 44
+```
+
+```
+
+# Html 45
+```
+
+```
+
+# Css 45
 ```
 
 ```
