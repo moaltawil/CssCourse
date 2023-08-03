@@ -570,62 +570,381 @@ div {
 ```
 # Html 20
 ```
-
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS</title>
+    <link rel="stylesheet" href="css/master.css" />
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <td>Name</td>
+          <td>Age</td>
+          <td>Email</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Osama</td>
+          <td>38</td>
+          <td>o@nn.sa</td>
+        </tr>
+        <tr>
+          <td>Ahmed</td>
+          <td>38</td>
+          <td>o@nn.sa</td>
+        </tr>
+        <tr>
+          <td>Sayed</td>
+          <td>38</td>
+          <td>o@nn.sa</td>
+        </tr>
+        <tr>
+          <td>Ali</td>
+          <td>38</td>
+          <td>o@nn.sa</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
 ```
 
 # Css 20
 ```
-
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+table {
+  width: 100%;
+  border: 1px solid #CCC;
+  border-spacing: 0;
+}
+table td {
+  padding: 15px;
+  background-color: #EEE;
+  border: 1px solid #CCC;
+}
+table thead td {
+  background-color: #f44336;
+  color: #FFF;
+  font-weight: bold;
+  text-align: center;
+  border-color: #F35246;
+}
 ```
 
 # Html 21
 ```
-
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS</title>
+    <link rel="stylesheet" href="css/master.css" />
+  </head>
+  <body>
+    <div class="one">Normal Element</div>
+    <hr />
+    <div class="two"></div>
+    <p></p>
+    <hr />
+    <a href="https://google.com">Link 1</a>
+    <a href="https://twitter.com">Link 2</a>
+    <a href="https://youtube.com">Link 3</a>
+    <a href="https://linkedin.com">Link 4</a>
+    <hr />
+    <form action="">
+      <div>
+        <input class="in" type="text" />
+      </div>
+      <div>
+        <input class="ch" type="checkbox" />
+        <label for="">Testing Check</label>
+      </div>
+    </form>
+  </body>
+</html>
 ```
 
 # Css 21
 ```
-
+.one {
+  background-color: red;
+  color: white;
+}
+.two {
+  background-color: #EEE;
+  width: 100px;
+  height: 100px;
+}
+a {
+  color: green;
+  text-decoration: none;
+}
+a:hover {
+  color: red;
+}
+a:visited {
+  color: blue;
+}
+:empty {
+  border: 10px solid red;
+}
+.ch:checked {
+  display: none;
+}
+.in:focus {
+  border-color: red;
+  outline: none
+}
 ```
 
 # Html 22
 ```
-
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS</title>
+    <link rel="stylesheet" href="css/master.css" />
+  </head>
+  <body>
+    <div class="parent">
+      <div class="user">O</div>
+      <div class="one">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum labore culpa dolores, autem voluptatum atque,
+        in dolore asperiores facilis libero dolorum magni iure doloribus quae pariatur! Similique ipsum nobis quos.
+      </div>
+    </div>
+    <div class="parent">
+      <div class="user">A</div>
+      <div class="one">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum labore culpa dolores, autem voluptatum atque,
+        in dolore asperiores facilis libero dolorum magni iure doloribus quae pariatur! Similique ipsum nobis quos.
+      </div>
+    </div>
+    <div class="parent">
+      <div class="user">E</div>
+      <div class="one">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum labore culpa dolores, autem voluptatum atque,
+        in dolore asperiores facilis libero dolorum magni iure doloribus quae pariatur! Similique ipsum nobis quos.
+      </div>
+    </div>
+  </body>
+</html>
 ```
 
 # Css 22
 ```
-
+.parent {
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+.one {
+  background-color: #eee;
+  padding: 10px;
+  width: 600px;
+  float: left;
+  position: relative;
+}
+.one::after {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 100%;
+  right: -10px;
+  top: 0;
+  background-color: #009688;
+}
+.one::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -20px;
+  width: 0;
+  height: 0;
+  background-color: white;
+  margin-top: -10px;
+  border-style: solid;
+  border-width: 10px;
+  border-color: transparent #009688 transparent transparent;
+}
+.user {
+  background-color: #eee;
+  width: 50px;
+  margin-right: 20px;
+  padding: 10px;
+  height: 55.5px;
+  float: left;
+  font-size: 50px;
+  text-align: center;
+}
 ```
 
 # Html 23
 ```
-
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS</title>
+    <link rel="stylesheet" href="css/master.css" />
+  </head>
+  <body>
+    <div class="parent">
+      <div class="user">O</div>
+      <div class="one" data-text="Something">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum labore culpa dolores, autem voluptatum atque,
+        in dolore asperiores facilis libero dolorum magni iure doloribus quae pariatur! Similique ipsum nobis quos.
+      </div>
+    </div>
+    <div class="parent">
+      <div class="user">A</div>
+      <div class="one">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum labore culpa dolores, autem voluptatum atque,
+        in dolore asperiores facilis libero dolorum magni iure doloribus quae pariatur! Similique ipsum nobis quos.
+      </div>
+    </div>
+    <div class="parent">
+      <div class="user">E</div>
+      <div class="one">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum labore culpa dolores, autem voluptatum atque,
+        in dolore asperiores facilis libero dolorum magni iure doloribus quae pariatur! Similique ipsum nobis quos.
+      </div>
+    </div>
+    <ul>
+      <li>One</li>
+      <li>One</li>
+      <li>One</li>
+      <li>One</li>
+      <li>One</li>
+    </ul>
+  </body>
+</html>
 ```
 
 # Css 23
 ```
-
+.parent {
+  margin-bottom: 20px;
+  overflow: hidden;
+  counter-increment: members-counter;
+}
+.one {
+  background-color: #eee;
+  padding: 10px;
+  width: 600px;
+  float: left;
+  position: relative;
+}
+.one::before {
+  content: attr(data-text);
+  display: none;
+}
+.one::after {
+  content: counter(members-counter);
+  position: absolute;
+  background-color: red;
+  color: white;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  font-weight: bold;
+  right: -10px;
+  top: 50%;
+  margin-top: -10px;
+}
+.user {
+  background-color: #eee;
+  width: 50px;
+  margin-right: 20px;
+  padding: 10px;
+  height: 55.5px;
+  float: left;
+  font-size: 50px;
+  text-align: center;
+}
+ul {
+  list-style: none;
+}
+ul li {
+  position: relative;
+}
+ul li::before {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: -20px;
+  top: 50%;
+  margin-top: -10px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent #009688 transparent transparent;
+}
 ```
 
 # Html 24
 ```
-
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS</title>
+    <link rel="stylesheet" href="css/master.css" />
+  </head>
+  <body>
+    <div></div>
+  </body>
+</html>
 ```
 
 # Css 24
 ```
-
+div {
+  width: 150px;
+  height: 150px;
+  background-color: red;
+  margin: 20px auto;
+  border-radius: 6px;
+  /* border-top-left-radius: 20px 20px;
+  border-bottom-right-radius: 20px; */
+}
 ```
 
 # Html 25
 ```
-
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS</title>
+    <link rel="stylesheet" href="css/master.css" />
+  </head>
+  <body>
+    <div>Element</div>
+  </body>
+</html>
 ```
 
 # Css 25
 ```
-
+div {
+  padding: 20px;
+  background-color: #eee;
+  margin: 20px auto;
+  width: 300px;
+  box-shadow:
+    0 0 10px 0 #F10000,
+    0 0 10px 0 #000,
+    0 0 10px 0 #080,
+    0 0 10px 0 #00f,
+    0 0 10px 0 yellow;
+}
 ```
 
 # Html 26
