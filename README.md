@@ -1828,40 +1828,204 @@ a {
 
 # Html 42
 ```
-
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS</title>
+    <link rel="stylesheet" href="css/master.css" />
+  </head>
+  <body>
+    <div class="page">
+      <h2>Elzero</h2>
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Services</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
+      <section>Content</section>
+      <aside>Sidebar</aside>
+      <footer>Footer</footer>
+    </div>
+  </body>
+</html>
 ```
 
 # Css 42
 ```
+/*
+  Grid
+  Parent
+  - display: grid | inline-grid
+  - grid-template-columns: [Number Of Columns In] => [Px, %, Auto, Fraction, Repeat, Mix]
+  - grid-template-rows: [Number Of Rows In] => [Px, %, Auto, Fraction, Repeat, Mix]
+  - gap: [Row Gap] [Column Gap]
+  - justify-content
+  - align-content
+*/
 
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+ul {
+  list-style: none;
+}
+ul li {
+  display: inline-block;
+}
+.page {
+  height: 100vh;
+  background-color: #eee;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: 50px auto 50px;
+  grid-template-areas:
+    "logo logo nav nav nav nav nav nav nav nav"
+    "cont cont cont cont cont cont cont . side side"
+    "foot foot foot foot foot foot foot foot foot foot";
+}
+h2 {
+  grid-area: logo;
+  background-color: red;
+  color: white;
+}
+nav {
+  grid-area: nav;
+  background-color: blue;
+  color: white;
+}
+section {
+  grid-area: cont;
+  background-color: yellow;
+  color: white;
+}
+aside {
+  grid-area: side;
+  background-color: green;
+  color: white;
+}
+footer {
+  grid-area: foot;
+  background-color: black;
+  color: white;
+}
 ```
 
 # Html 43
 ```
-
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS</title>
+    <link rel="stylesheet" href="css/master.css" />
+  </head>
+  <body>
+    <div>Transform</div>
+  </body>
+</html>
 ```
 
 # Css 43
 ```
-
+div {
+  margin: 200px auto;
+  width: 200px;
+  height: 200px;
+  background-color: rgb(255 0 0 / 39%);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 30px;
+  transform: rotate(45deg);
+  transform: rotate(1turn);
+  transform: rotate(0.5turn);
+  transform: rotate(0.25turn);
+}
 ```
 
 # Html 44
 ```
-
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS</title>
+    <link rel="stylesheet" href="css/master.css" />
+  </head>
+  <body>
+    <h2>Test Title</h2>
+    <div>Transform</div>
+  </body>
+</html>
 ```
 
 # Css 44
 ```
-
-```
-
-# Html 45
-```
-
+h2 {
+  position: relative;
+  color: white;
+  margin: 20px auto;
+  width: fit-content;
+  padding: 20px;
+}
+h2::before {
+  content: "";
+  background-color: red;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  transform: skewX(20deg);
+}
+div {
+  margin: 200px auto;
+  width: 200px;
+  height: 200px;
+  background-color: rgb(255 0 0 / 39%);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 30px;
+  transform: skewX(10deg);
+  transform: skewX(-10deg);
+  transform: skewY(10deg);
+  transform: skewY(-10deg);
+  transform: skew(10deg, 10deg);
+}
 ```
 
 # Css 45
 ```
+/*
+  CSS Selectors
+  - Element + Other Element => [div + p]
+  - Element ~ Other Elements => [p ~ div]
+  - [Attribute]
+  - Element[Attribute]
+  - [Attribute=Value]
+  - Element[Attribute=Value] => input[type="submit"]
+  - [Attribute~=Value] => Contains A Word
+  - [Attribute*=Value] => Contains A Atring
+  - [Attribute^=Value] => Start With A String
+*/
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
 ```
